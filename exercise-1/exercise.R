@@ -5,7 +5,7 @@ install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
 devtools::install_github("hadley/fueleconomy")
-
+dfag
 
 # Require/library the fueleconomy package
 library(fuelecon)
