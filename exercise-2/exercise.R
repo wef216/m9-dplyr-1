@@ -8,13 +8,18 @@ install.packages('devtools')
 devtools::install_github("hadley/fueleconomy")
 
 # Require/library the fueleconomy package
-
+library(fueleconomy)
+library(tidyr)
+install.packages("dplyr")
+library(dplyr)
 
 # You should have have access to the `vehicles` data.frame
-
+head(vehicles)
+str(vehicles)
+cars <- tibble(vehicles)
 
 # Create a data.frame of vehicles from 1997
-
+cars %>% filter(year == 1997)
 
 # Use the `unique` function to verify that there is only 1 value in the `year` column of your new data.frame
 
